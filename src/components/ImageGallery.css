@@ -1,0 +1,116 @@
+/* 
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px; 
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .image-gallery img {
+      max-width: 200px;
+    }
+  }
+  
+
+  .image-gallery img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .container {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+  .image-gallery-container {
+    display: flex;
+    justify-content: center;
+  } */
+/* ImageGallery.css */
+
+.image-gallery {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px; /* Add margin around each photo to create space */
+    cursor: pointer; /* Set the cursor to a pointer when hovering over the image */
+  }
+  
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  .modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
